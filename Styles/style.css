@@ -1,0 +1,41 @@
+body{
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+header{  
+    width: 80%;
+    display:flex;
+    justify-content: flex-end;
+    position: fixed;
+       }
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav_bar {
+    font-size: 25px;
+    line-height: 2;
+    color: #413c69;
+    margin-right: 20px;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration:none;
+    }
+
+    hr {
+        height: 6px;
+	border: 0;
+	box-shadow: 0 6px 6px -6px #413c69 inset;
+    }
+
+    .my_photo {
+        width: 90%;
+        height: 90vh;
+        padding-top: 15px;
+      }
