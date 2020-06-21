@@ -19,7 +19,8 @@ ul{
 }
 
 .nav_bar {
-    font-size: 25px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
     line-height: 2;
     color: #413c69;
     margin-right: 20px;
@@ -39,3 +40,70 @@ ul{
         height: 90vh;
         padding-top: 15px;
       }
+
+      .hey{
+        position: absolute;
+        top:28%;
+        left:40%;
+      font-family: 'Sacramento', cursive;
+      font-size: 35px;
+        color: #413c69;
+      }
+
+.hey2{
+    position: absolute;
+        top:40%;
+        left:43%;
+    font-family: 'Montserrat', sans-serif;
+    color: #413c69;
+}
+
+
+.but1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left:25%;
+    top: 20%;
+    transform: rotate(-20deg);
+     }
+
+
+.but2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right:22%;
+    top: 45%;
+    transform: rotate(30deg);
+           
+    }
+    
+
+.but3 {
+    position: absolute;
+    width: 6.25rem;
+    height: 6.25rem;
+    right:25%;
+    top: 15%;
+    transform: rotate(30deg);
+              
+    }
+.but4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right:30%;
+    top: 30%;
+    transform: rotate(30deg);
+                   
+    }                
+.but5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right:40%;
+    top: 30%;
+    transform: rotate(30deg);
+                       
+    }
