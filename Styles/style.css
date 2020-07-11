@@ -36,7 +36,7 @@ ul{
 	box-shadow: 0 6px 6px -6px #413c69 inset;
     }
 
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 770px) {
     .nav_bar{
     font-size: 13px;
         }
@@ -44,7 +44,6 @@ ul{
         height: 2px;
         width: 85%;
     }
-
     }
     
     .welcome-section{
@@ -61,21 +60,20 @@ ul{
         padding-top: 15px;
       }
 
-      .hey{
+    .hey{
     position: absolute;
     top:40%;
     left:50%;
     transform: translate(-50%, -50%);
-      }
+    }
 
     h1{
-    display: inline;
     text-align: center;
     font-family: 'Sacramento', cursive;
     font-size: 5rem;
     color: #413c69;
     margin: 0;
-      }
+    }
 
 h2{
     font-family: 'Montserrat', sans-serif;
@@ -93,17 +91,14 @@ h2{
     transform: rotate(-30deg);
      }
 
-
 .but2 {
     position: absolute;
     width: 6rem;
     height: 6rem;
     left:25%;
     top: 8%;
-    transform: rotate(-30deg);
-           
+    transform: rotate(-30deg);      
     }
-    
 
 .but3 {
     position: absolute;
@@ -111,6 +106,5 @@ h2{
     height: 6.25rem;
     right:25%;
     top: 15%;
-    transform: rotate(30deg);
-              
+    transform: rotate(30deg);         
     }
