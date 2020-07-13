@@ -2,51 +2,57 @@ body{
     background-color: white;
     margin: auto;
     text-align: center;
-    width: 100%;
-}
+  }
 
 header{  
-    margin-top: 10px;
-    width: 80%;
+    background-color:white;
     display:flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
+    margin-top: 0; 
     position: fixed;
+    width: 100%;
     }
 
+    .navbar{
+    margin-right: 4.45rem;
+    }
 ul{
-    list-style-type: none;
     display: flex;
-    margin: 0;
+    list-style-type: none;
+    
 }
 
-.nav_bar {
-
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 2;
+.list {
     color: #413c69;
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 20px;
+    font-weight: bold;    
+    line-height: 2;
     margin-right: 1.25rem;
     padding: 1.25rem;
-    font-weight: bold;
     text-decoration:none;
     }
 
-    hr {
-    height: 6px;
+    hr {    
 	border: 0;
-	box-shadow: 0 6px 6px -6px #413c69 inset;
+    box-shadow: 0 6px 6px -6px #413c69 inset;
+    height: 6px;
+    margin-bottom: 0;
     }
 
  
     @media only screen and (max-width: 414px) {
         header{
-            width: 100%;
             justify-content: center;
-        }
+            width: 100%;
+         }
+         .navbar{
+             margin-right: 0;
+         }
         ul{
             padding: 0;
         }
-        .nav_bar{
+        .list{
         font-size: 0.5rem;
         margin-right:0.5rem ;
         padding: 0;
@@ -61,24 +67,21 @@ ul{
     @media only screen and (min-width: 415px) and (max-width: 770px) {
         header{
             width: 90%;
-            justify-content: ;
         }
         ul{
             padding: 0;
         }
-        .nav_bar{
+        .list{
             font-size: 1.2rem;
             margin-right:0.7rem ;
             padding: 0;
-                }
+         }
     hr{
         height: 0.125rem;
-        margin-top: 0.3rem;
         margin-bottom: 0;
+        margin-top: 0.3rem;
     }
-    }
-  
-        
+    }   
 
     .welcome-section{
         padding-top: 3.125rem;
@@ -89,58 +92,58 @@ ul{
 
 
     .my_photo {
-        width: 90%;
         height: auto;  /*makes media responsive*/
         padding-top: 0.93rem;
+        width: 90%;
       }
 
     .hey{
+    left:50%;
     position: absolute;
     top:40%;
-    left:50%;
     transform: translate(-50%, -50%);
     }
 
     h1{
-    text-align: center;
+    color: #413c69;
     font-family: 'Sacramento', cursive;
     font-size: 5rem;
-    color: #413c69;
     margin: 0;
+    text-align: center;
     }
 
 h2{
-    font-family: 'Montserrat', sans-serif;
     color: #413c69;
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
+    margin: 0;
 }
 
 .but1 {
-    position: absolute;
-    width: 5rem;
     height: 5rem;
     left:22%;
+    position: absolute;
     top: 34%;
     transform: rotate(-30deg);
+    width: 5rem;
      }
 
 .but2 {
-    position: absolute;
-    width: 6rem;
     height: 6rem;
     left:25%;
-    top: 8%;
-    transform: rotate(-30deg);      
+    position: absolute;
+    top: 11%;
+    transform: rotate(-30deg);  
+    width: 6rem;    
     }
 
 .but3 {
-    position: absolute;
-    width: 6.25rem;
     height: 6.25rem;
+    position: absolute;
     right:25%;
     top: 15%;
-    transform: rotate(30deg);         
+    transform: rotate(30deg);        
+    width: 6.25rem;
     }
 
     @media only screen and (max-width: 414px) {
@@ -157,20 +160,20 @@ h2{
         font-size: 1rem;
     }
     .but1{
-        width: 1.3rem;
         height: 1.3rem;
-        top: 43%
+        top: 43%;
+        width: 1.3rem;
     }
     .but2{
-        width: 2rem;
         height: 2rem;
-        top: 20%;
+        top: 21%;
+        width: 2rem;     
     }
     .but3{
-        width: 2.1rem;
         height: 2.1rem;
-        top: 17%;
-        right: 20%;
+        right: 21%;
+        top: 24%;
+        width: 2.1rem;
     }
         }
 
@@ -182,18 +185,69 @@ h2{
             font-size: 1.5rem;
         }
         .but1{
-            width: 4rem;
             height: 4rem;
-    }
+            width: 4rem;
+        }
     .but2{
-        width: 5rem;
         height: 5rem;
-        top: 10%;
+        top: 14%;
+        width: 5rem;
     }
     .but3{
-        width: 5.1rem;
         height: 5.1rem;
-
-
-
+        top: 17%;
+        width: 5.1rem;
 }
+ }
+.about_me{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    margin: auto;
+    width: 90%;
+}
+
+figure{
+    font-family:'Domine', serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    width: 100%;
+}
+ .picture{
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px 0px #413C69;
+    height:auto;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    width:50%;
+    
+}
+
+article{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    width: 100%;
+}
+
+h3{
+    color: #ad62aa;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin:0;
+}
+
+
+p{
+    font-family:'Domine', serif;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .picture2{
+    height:auto;
+    justify-content: center;
+    width:30%;
+
+    
+  }
