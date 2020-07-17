@@ -199,7 +199,7 @@ h2{
         width: 5.1rem;
 }
  }
-.about_me{
+.Me{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
@@ -229,7 +229,7 @@ figure{
     height:auto;
     margin-bottom: 1rem;
     margin-top: 2rem;
-    width:50%;  
+    width:90%;  
 }
 
 article{
@@ -240,11 +240,11 @@ article{
 
 .about-me{
     background-color: #f9ebf0;
-    border-color: #ad62aa;
     /*border-width:5px;  
     border-style:dotted;*/
     display:inline-block;
     margin-bottom: 1rem;
+    box-shadow: 5px 5px 10px 2px #413C69;
 
 }
 .picture1{
@@ -296,6 +296,17 @@ article{
     shape-outside:circle() content-box;
     width: 15%;
 }
+
+.picture5{
+     /*border:solid 1px #413C69;*/
+     border-radius: 50%;
+     float:left;
+     padding-top: 1rem;
+     shape-outside:circle() content-box;
+     width: 15%;
+}
+
+
 p{
     
     font-family:'Domine', serif;
@@ -303,7 +314,7 @@ p{
     text-align: center;
   }
 
-  .picture5{
+  .picture10{
     height:auto;
     justify-content: center;
     width:30%;
