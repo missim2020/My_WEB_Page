@@ -14,7 +14,7 @@ header{
     }
 
 header.scroll{
-    background-color: #f6eef6;
+    background-color: #ffcccc;
 
 }
 
@@ -205,11 +205,9 @@ h2{
 }
  }
 
-
-.main_section{
+.main{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap:;
+    grid-template-columns: repeat(3, 1fr);
     margin: auto;
     width: 100%;
     /*border:solid 1px #413c69;*/
@@ -233,8 +231,8 @@ h3{
     width: 100%;
 }*/
 .picture{
-background-image: url(/Images/my.jpg);
-background-size: cover;
+background-image: url(/Images/kuku2.jpg);
+background-size: contain;
     /*border-radius: 20px;*/
     /*box-shadow: 5px 5px 7px 0px #413C69;*/
 height:100vh;
@@ -285,6 +283,27 @@ p{
       width: 5%;
   }
 
+.random{
+    
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 1rem;
+    width: 90%;
+  }
+
+.icon{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px black;
+   
+}
+
+.icon_img{
+    width: 60%;
+}
+
+
   .quote{
     color: #413c69;
     font-size: 1.2rem;
@@ -307,6 +326,9 @@ p{
     margin-top: 6.5rem;
     width:100%;
     }
+
+   
+
 
   .picture5{
     height:auto;
