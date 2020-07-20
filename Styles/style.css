@@ -11,10 +11,12 @@ header{
     margin-top: 0; 
     position: fixed;
     width: 100%;
+    z-index: 9999;
     }
 
 header.scroll{
-    background-color: #ffcccc;
+    background-color: #faebeb;
+
 
 }
 
@@ -87,6 +89,7 @@ ul{
         margin-top: 0.3rem;
     }
     }   
+/*Welcom section*/
 
     .welcome-section{
         padding-top: 3.125rem;
@@ -205,103 +208,108 @@ h2{
 }
  }
 
-.main{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto;
-    width: 100%;
-    /*border:solid 1px #413c69;*/
+
+/*section About Me*/
+
+.About-me{
+position: relative;
 }
+.photo1{
+height: auto;  
+width: 100%;
+
+}
+
+.text{
+    position: absolute;
+    width: 60%;
+    height: 80%;
+}
+
 h3{
     color: #ad62aa;
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5rem;
-    margin:0;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top:0;
+    margin-bottom: 0.5rem;
     width: 100%;
 
 }
 
-/*figure{
-    font-family:'Domine', serif;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin: 0;
-    width: 100%;
-}*/
-.picture{
-background-image: url(/Images/kuku2.jpg);
-background-size: contain;
-    /*border-radius: 20px;*/
-    /*box-shadow: 5px 5px 7px 0px #413C69;*/
-height:100vh;
-width:100%;
-}
-
-.About_me{
-    background-color: #ffe6e6;
-    grid-column-start: 2;
-    grid-column-end: -1;
-    height: 100vh;
-    margin: 0;
+.article{
+    height: 100%;  
     overflow-x: auto;
+  position: absolute;
+    top:75px;
     text-align: center;
-    width: 100%;    
+    width: 100%;
+    
 }
 
-.About_me::-webkit-scrollbar {
+.article::-webkit-scrollbar {
     background: transparent; /* make scrollbar transparent */
     width: 0px;
     }
 
+    p{
+        font-family:'Domine', serif;
+        font-size: 1.1rem;
+        font-style: italic;
+        line-height: 1.6;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;   
+        text-align: center;
+      }
 
-/*.about-me{
-    background-color: #f9ebf0;
-    border-color: #ad62aa;
-    /*border-width:5px;
-    border-style:dotted;
-    display:inline-block;
-    margin-bottom: 1rem;
+      .dots{
+        border-color: #ad62aa;
+        border-style: dotted none none;
+        border-width: 0.5rem;
+        width: 5%;
+    }
 
-}*/
-
-p{
-    font-family:'Domine', serif;
-    font-size: 1.2rem;
-    font-style: italic;
-    line-height: 1.6;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;   
-    text-align: center;
-  }
-
-  .dots{
-      border-color: #ad62aa;
-      border-style: dotted none none;
-      border-width: 0.5rem;
-      width: 5%;
-  }
-
-.random{
+.why{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    position: relative;
+    width: 100%;
     
-    display: inline-grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding-top: 1rem;
-    width: 90%;
-  }
+}
 
-.icon{
-    display: flex;
-    justify-content: center;
+
+.picture{
+background-image: url(/Images/new.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+grid-column-start:1;
+grid-column-end:3;
+height:100vh;
+width:100%;
+}
+
+.My_Why{
+    background-color: white;
+    grid-column-start: 3;
+    grid-column-end: -1;
+    margin: 0;
+    overflow-x: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    border: solid 1px black;
-   
+    width: 100%;    
 }
 
-.icon_img{
-    width: 60%;
-}
+.but4 {
+    height: 7rem;
+    right:10%;
+    position: absolute;
+    top: 5%;
+    transform: rotate(40deg);
+    width: 7rem;
+     }
 
 
   .quote{
@@ -318,22 +326,27 @@ p{
  
   }
 
-  .picture2{
-    background-image: url(/Images/photo2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:100vh;
-    margin-top: 6.5rem;
-    width:100%;
+
+  @media only screen and (max-width: 414px) {
+      .title{
+          left: 4rem;
+      }
+    h3{
+        font-size: 1rem;
     }
+    .article{
+        top: 1rem;
+        width: 80%;
+    }
+p{
+    font-size: 0.6rem;
+}
 
-   
-
-
-  .picture5{
-    height:auto;
-    justify-content: center;
-    width:30%;
+.dots{
+    border-width: 0.2rem;
+}
 
 
   }
+
+
