@@ -220,7 +220,7 @@ width: 100%;
 
 }
 
-.text{
+.text-about-me{
     position: absolute;
     width: 60%;
     height: 80%;
@@ -251,7 +251,7 @@ h3{
     width: 0px;
     }
 
-    p{
+    .text{
         font-family:'Domine', serif;
         font-size: 1.1rem;
         font-style: italic;
@@ -292,6 +292,7 @@ width:100%;
     background-color: white;
     grid-column-start: 3;
     grid-column-end: -1;
+    /*height: 100%;*/
     margin: 0;
     overflow-x: auto;
     position: absolute;
@@ -349,4 +350,168 @@ p{
 
   }
 
+  /*My project section*/
+  /*image carousel*/
 
+  .picture-carousel{
+    height: 400px;
+    width: 640px;
+    }
+  
+  .flex-wrapper {
+  display: flex;
+      justify-content: center;
+      width: 100%;
+      
+    }
+  
+    .slider-wrapper {
+      position: relative;
+    }
+    #btn-prev, #btn-next {
+        background-color: gray;
+      cursor: pointer;
+        height: 400px;
+      left: 0;  
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        transition: opacity .2s ease-in-out;
+        width: 50px;
+    }
+  
+    #btn-prev:hover, #btn-next:hover {
+      opacity: 0.6;
+  }
+  
+  
+  #btn-next {
+      left: auto;
+      right: 0;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .dots-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+  }
+  
+  .dot.active {
+      background-color: #000000;
+  }
+  
+  span {
+     background-color: gray;
+     border-radius: 50%;
+      cursor: pointer; 
+      height: 15px;    
+      margin-right: 10px;
+      width: 15px;
+  }
+  span:last-child{
+      margin-right: 0;
+  }
+  
+  .random{
+    background-color: blanchedalmond;
+    position: relative;
+    }
+  
+  .facts{
+    background-color;
+  font-size:2em;
+  left: 50%;
+    position:absolute;
+    top:50%;
+      transform: translate(-50%, -50%);  
+  
+  }
+  
+  .text-carousel{
+   background-color: white;
+    box-shadow: 0px 4px 12px 1px rgba(0,0,0,0.75);
+    color:black;
+    font-family:'Domine', serif;
+    font-size:1.6rem;
+    height: 4rem;
+     margin: 0;
+    position:absolute;
+    top:72%;
+    width: 99.9%;
+       
+    /*border:solid 1px black;*/
+      
+    }
+  
+    a{
+      color: black;
+    }
+    a:hover{
+      color:grey;
+    }
+
+    .controls{
+        background: #404040;
+        border: none;
+        border-radius: 6px;
+        color: #ffffff !important;
+        display: inline-block;
+        font-family:'Domine', serif;
+        font-size: 1rem;
+        letter-spacing: 6px;
+        margin-top: 0.5rem;
+        padding: 15px;
+        text-transform: uppercase;      
+        transition: all 0.3s ease 0s;
+        width: 10rem;
+
+    }
+
+    .controls:hover{
+        color: #404040 !important;
+        font-weight: 700 !important;
+        letter-spacing: 10px;
+        background: none;
+        box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+    }
+    /*other projects*/
+
+    .other-projects{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 3rem;
+        position: relative;
+        width: 100%;
+    }
+
+    .picture-projects{
+    width: 100%;
+    }
+
+    figcaption{
+        font-family:'Domine', serif;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        padding: 0.4rem;
+    }
+
+    /*links*/
+h5{
+    font-family:'Domine', serif;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+    .links{
+        display: flex;
+        justify-content: center;
+    }

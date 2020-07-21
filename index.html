@@ -3,11 +3,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/style.css">
+    <!--<script src="https://kit.fontawesome.com/94d0b9783c.js" crossorigin="anonymous"></script>-->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="icon" href="./Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Domine&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    
     <title>Simona's Web Page</title>
 </head>
 <body>
+  <!--navigation bar-->
     <header id="header">
         <nav class="navbar" id="navbar">
             <ul>
@@ -41,30 +45,30 @@
 <section class="main_section" id="Main">
 <div class="About-me">
   
-<div class="text">
+<div class="text-about-me">
 <div class="title"><h3> About Me</h3></div>
 <article class="article">
     
-    <p>	Coding never crossed my mind however I was always curious about 
+    <p class="text">	Coding never crossed my mind however I was always curious about 
       technology and how things work. I remember when my dad bought our 
       first PC in 1998. It just had the MS-DOS operation system on it. 
       I taught myself how to send and receive emails as I wanted to chat with my 
       friends. Once I set my mind to solving a particular problem I am very motivated,
        persistent, resourceful and creative in finding solutions. </p>
     <hr class="dots">
-  <p>
+  <p class="text">
     I have NCFE CACHE Level2 Certificate in Understanding working in the Health 
     Sector, a Bachelor Degree in “Business administration and management” and few 
     other certificates in coaching, time planning and leadership.  </p>
       
     <hr class="dots">
-      <p>  
+      <p class="text">  
         I have been self-employed for the 
         last 10 years working in cosmetic sales. I prepared and delivered presentations,
          created motivational programs for my team, and ran structured training sessions.</p>
      
          <hr class="dots">
-      <p>
+      <p class="text">
         My husband has worked closely with software developers in 
         the past and always believed that I would be great at coding. He saw that I
          like to solve problems, am very patient and methodical in searching for solutions but
@@ -72,7 +76,7 @@
           and computer science for coding.  </p>
       
           <hr class="dots">
-       <p>  
+       <p class="text">  
         I found out about “Founders and Coders” from a 
         housemate who’s the head of HR in a Health-Tech NGO. She mainly recruits 
         software developers and has hired a few graduates from “founders and coders”. 
@@ -81,7 +85,7 @@
         knowledge to change their lives and potentially change the world!</p>
      
         <hr class="dots">
-      <p>
+      <p class="text">
       My journey in coding started in March 2020 after I decided to apply for a summer 
       cohort. I started to solve the prerequisite tasks on the “freeCodeCamp” site. I 
       was so engrossed in the exercises that I spent days and days just implementing 
@@ -89,7 +93,7 @@
       something, to learn how everything works and to solve problems.  </p>
       
       <hr class="dots">
-        <p> 
+        <p class="text"> 
         I’ve run through many of the tasks on the FCC page multiple times now.  
           The first time everything was very new, exciting and unfamiliar to me. After 
           I put all my knowledge into practise by creating a web page and solving Kata’s, 
@@ -97,12 +101,12 @@
           crystallised in my mind. It was like a small revelation!</p>
        
           <hr class="dots">
-       <p>
+       <p class="text">
       I’m very passionate about travel, baking, reading, phycology, self-learning, 
       and gardening </p>
     
       <hr class="dots">
-      <p>
+      <p class="text">
     For me coding is like baking a cake. You need to follow very specific instructions; 
         however there’s a level of flexibility and creativity to express yourself in very 
         unique ways. </p>
@@ -119,7 +123,7 @@
 
 <article class="My_Why">
   <h3> My Why</h3>
-  <p>
+  <p class="text">
 I am always interested in learning new skills and am energised by the prospect 
 of diving into a new and exciting career. I think “Founders and Coders” is a fantastic 
 way to do this. I like the idea of FAC as a community of like-minded people and I would 
@@ -127,7 +131,7 @@ love to be a part of it. I know that I can learn a lot from others and believe t
 a lot to give back too. 
   </p>
   <hr class="dots">
-  <p>
+  <p class="text">
 I have always been passionate about training people in my previous role. I found the 
 meetup approach used at FAC inspirational and learned so much about myself from the 
 experience:<br>
@@ -144,7 +148,7 @@ collaboratively.<br>
 
   </p>
   <hr class="dots">
-  <p>
+  <p class="text">
 I remember when I first created a very simple recipe page with the course at pirple.com 
 and first solved a kata at codewars.com. I was so proud that I achieved something that I 
 never thought I can do! This feeling of accomplishment propelled me onward to learn more; 
@@ -168,19 +172,103 @@ to create something mind blowing in the future.
  <!--My Projects-->
 
  <section class="projects" id="projects">
-
-
-
-
-
-
+<!-- image carousel-->
+  <h3>My image carousel</h3>
+  <div class="flex-wrapper">
+    <div class="slider-wrapper">
+      <div class="slide active"> <!-- shows witch slide is active. after refresh from which slide we start doing our slide show -->
+        <img class="picture-carousel random" src="./images/me.jpg" alt="picture of me">
+        <div class="facts">Random Facts About Me </div>
+      </div>
+      <div class="slide">
+        <img class="picture-carousel" src="./images/cake.jpg" alt="picture of cake">
+        <p class="text-carousel"> I like baking cakes more than eating them. </p>
+      </div>
+      <div class="slide">
+    <img class="picture-carousel" src="./images/skate.jpg" alt="women skate">
+    <p class="text-carousel"> I used to ice skate across a frozen lake to go to school in the winter </p>
+  </div>
+  <div class="slide">
+    <img class="picture-carousel" src="./images/vilage.jpg" alt="picture of village">
+    <p class="text-carousel"> I grew up in a small village with no running hot water and only 
+      an outdoor W.C. </p>
+  </div>
+  <div class="slide">
+    <img class="picture-carousel" src="./images/cow.jpg" alt="picture of the cow">
+    <p class="text-carousel"> I know how to milk a cow</p>
+  </div>
+  <div class="slide">
+    <img class="picture-carousel" src="./images/army.png" alt="military">
+    <p class="text-carousel"> After I finished school I was accepted by a military school,
+       but decided to go elsewhere</p>
+  </div>
+  <div class="slide">
+    <img class="picture-carousel" src="./images/choir.jpg" alt="children choir">
+    <p class="text-carousel"> At school I was removed from the choir after the teacher 
+      found out how bad my singing voice was</p>
+  </div>
+  <div class="slide">
+    <img class="picture-carousel" src="./images/movie.jpg" alt="movie poster">
+    <p class="text-carousel"> My favourite movie is <a href="https://www.imdb.com/title/tt1187043/" target="_blank"> “3 idiots”</a> </p>
+  </div>
   
+  <div id="btn-prev"></div>
+  <div id="btn-next"></div>
+  
+  <div><button class="controls" id="pause">Pause</button></div>
+  
+    </div>
+  </div>
+  
+  <div class="dots-wrapper">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+<!--other projects-->
+ <section class="other-projects">
+<figure>
+<a href= "https://github.com/missim2020/Women-In-Tech" target="blank"><img class="picture-projects" src="./Images/women_in_tech.png" alt="" ><figcaption>"CodeFirstGirls" project</figcaption></a>
+</figure>
+
+<figure>
+  <a href= "https://github.com/missim2020/Dice-game" target="blank"><img class="picture-projects" src="./Images/dice_game.png" alt="" > <figcaption>"Udemy course" project</figcaption></a>
+</figure>
+
+<figure>
+    <a href= "https://codepen.io/Missim2020/pen/vYOPOWM" target="blank"><img class="picture-projects" src="./Images/technical_documentation.jpg" alt="" ><figcaption>Project for "FreeCodeCamp" certificate</figcaption></a>
+    </figure>
+  </section>
+  
+  <h5>More...</h5>
+  <section class="links">
+   
+    <figure>
+    <a href="https://github.com/missim2020" target="blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false" data-width="2rem" data-height="2rem"></span><figcaption>Github</figcaption></a>
+    </figure>
+    
+    <figure>
+    <a href="https://www.freecodecamp.org/fccbb0169f7-7a3d-4ad5-b509-226de61e68cf" target="blank"><span class="iconify" data-icon="simple-icons:freecodecamp" data-inline="false" data-width="2rem" data-height="2rem"></span><figcaption>FreeCodeCamp</figcaption></a>
+  </figure>
+
+  <figure>
+    <a href="https://www.codewars.com/users/missim2020" target="blank"><span class="iconify" data-icon="simple-icons:codewars" data-inline="false" data-width="2rem" data-height="2rem"></span><figcaption>Codewars</figcaption></a>
+  </figure>
+  
+  </section>
 </section>
 
 
 
 <!--Contacts-->
 <section class="contact" id="contact">
+
 
 
 
