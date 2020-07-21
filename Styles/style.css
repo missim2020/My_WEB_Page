@@ -464,7 +464,7 @@ p{
         border-radius: 6px;
         color: #ffffff !important;
         display: inline-block;
-        font-family:'Domine', serif;
+        font-family:'Montserrat', sans-serif;;
         font-size: 1rem;
         letter-spacing: 6px;
         margin-top: 0.5rem;
@@ -497,8 +497,12 @@ p{
     width: 100%;
     }
 
+    .picture-projects:hover{
+        opacity:0.7;
+    }
+
     figcaption{
-        font-family:'Domine', serif;
+        font-family:'Montserrat', sans-serif;;
         font-size: 1rem;
         font-weight: bold;
         margin-top: 0.5rem;
@@ -507,11 +511,36 @@ p{
 
     /*links*/
 h5{
-    font-family:'Domine', serif;
+    font-family:'Montserrat', sans-serif;
     font-size: 1rem;
     margin-bottom: 0;
 }
     .links{
         display: flex;
         justify-content: center;
+    }
+
+    /*footer*/
+
+    h6{
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.1rem;
+     margin-bottom: 0.5rem;
+     margin-top:1rem;
+    padding-top: 0.5rem;
+   
+    }
+
+    .iconify{
+margin: 0.5rem 0.5rem 0 0.5rem;
+
+    }
+
+    footer{
+        height: 7.5rem;
+        background-color: #faebeb;
+    }
+
+    .copyright{
+margin:0.5rem 0 0.5rem 0;
     }
