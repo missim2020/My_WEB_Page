@@ -32,7 +32,7 @@ ul{
 .list {
     color: #413c69;
     font-family: 'Montserrat', sans-serif;    
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;    
     line-height: 2;
     margin-right: 1.25rem;
@@ -211,6 +211,12 @@ h2{
 
 /*section About Me*/
 
+.main_section{
+    margin-bottom: 4rem;
+
+}
+
+
 .About-me{
 position: relative;
 }
@@ -221,10 +227,10 @@ width: 100%;
 }
 
 .text-about-me{
+    height: 80%;
     position: absolute;
     width: 60%;
-    height: 80%;
-}
+    }
 
 h3{
     color: #ad62aa;
@@ -239,8 +245,8 @@ h3{
 .article{
     height: 100%;  
     overflow-x: auto;
-  position: absolute;
-    top:75px;
+    position: absolute;
+    top: 4.6875rem;
     text-align: center;
     width: 100%;
     
@@ -270,7 +276,7 @@ h3{
 
 .why{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin: auto;
     position: relative;
     width: 100%;
@@ -279,21 +285,28 @@ h3{
 
 
 .picture-balloon{
-height:auto;
+height:1auto;
 width:100%;
 }
 
 .picture{
     grid-column-start:1;
-    grid-column-end:4;
+    grid-column-end:3;
 
 }
 
 
+.Why-text{
+background-color: white;
+grid-column-start: 3;
+grid-column-end: -1;
+margin-top: 4.5rem;
+position: relative;
+
+}
+
 .My_Why{
-    background-color: white;
-    grid-column-start: 4;
-    grid-column-end: -1;
+    height: 100%;
     margin: 0;
     overflow-x: auto;
     position: absolute;
@@ -301,32 +314,95 @@ width:100%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%;    
+    width: 80%;    
 }
 
-.but4 {
-    height: 7rem;
-    right:10%;
-    position: absolute;
-    top: 5%;
-    transform: rotate(40deg);
-    width: 7rem;
-     }
+.My_Why::-webkit-scrollbar {
+    background: transparent; /* make scrollbar transparent */
+    width: 0px;
+    }
 
 
-  .quote{
-    color: #413c69;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    grid-column-start: 1;
-    grid-column-end: -1;
-    line-height: 1.6;
-    margin: 5rem 0 5rem 0;
-    text-align: center;
- 
-  }
+     /*Quotes*/
 
+     #quote1{
+       color:black;  
+       border:1px solid #413c69;  
+       background-color: #faebeb;
+       height:7.5rem; 
+       margin: 50px auto;
+       padding:0.9rem;
+       position:relative;
+       text-align:center;
+       width:80%;
+   }
+
+     #quote2{
+        color:black;
+        background-color: #faebeb;
+        border:1px solid #413c69;
+        height:7.5rem; 
+        margin: 100px auto;
+        padding:0.9rem;
+        position:relative;
+        text-align:center; 
+        width:48rem;
+    }
+
+     cite{
+        background-color:white;
+        color:#413c69;
+        font-size:1.25rem;
+        padding:0 0.625rem;
+        position:relative; 
+        top:-1.75rem;
+      }
+      .corner{
+        background:white;
+        border-radius:50%;
+        border:1px solid #fff;
+        height:1.875rem;
+        position:absolute;
+        transform:rotate(-45deg);  
+        width:1.875rem;
+        
+      }
+      
+      #left_top{
+        border-color:transparent transparent #413c69 transparent;
+        left:-1rem;
+        top:-1rem;        
+      }
+
+      #right_top{
+        border-color:transparent transparent transparent #413c69;
+        right:-1rem;
+        top:-1rem;
+               
+      }
+
+      #left_bottom{
+        bottom:-1rem;
+        border-color:transparent #413c69 transparent transparent ;
+        left:-1rem;
+       
+      }
+      #right_bottom{
+        border-color:#413c69 transparent transparent transparent;  
+        bottom:-1rem;
+        right:-1rem;
+      }
+
+      blockquote{
+          margin:0;
+      }
+      .quote{
+          color:#413c69;
+          font-family: 'Sacramento', cursive;
+          font-size: 2rem;
+          font-weight: bold;
+          margin:0
+        }
 
   @media only screen and (max-width: 414px) {
       .title{
@@ -355,12 +431,12 @@ p{
   /*image carousel*/
 
   .picture-carousel{
-    height: 400px;
-    width: 640px;
+    height: 25rem;
+    width: 40rem;
     }
   
   .flex-wrapper {
-  display: flex;
+      display: flex;
       justify-content: center;
       margin-top: 2rem;
       width: 100%;
@@ -373,14 +449,14 @@ p{
     }
     #btn-prev, #btn-next {
         background-color: gray;
-      cursor: pointer;
-        height: 400px;
-      left: 0;  
+       cursor: pointer;
+        height: 25rem;
+        left: 0;  
         opacity: 0.4;
         position: absolute;
         top: 0;
         transition: opacity .2s ease-in-out;
-        width: 50px;
+        width: 3.125rem;
     }
   
     #btn-prev:hover, #btn-next:hover {
@@ -394,9 +470,9 @@ p{
   }
   
   .slide {
+    box-shadow: 2px 6px 11px 3px #413c69;  
     display: none;
-    box-shadow: 2px 6px 11px 3px #413c69;
-  }
+}
   
   .slide.active {
     display: block;
@@ -405,7 +481,7 @@ p{
   .dots-wrapper {
       display: flex;
       justify-content: center;
-      margin-top: 15px;
+      margin-top: 0.9rem;
   }
   
   .dot.active {
@@ -415,13 +491,13 @@ p{
   span {
      background-color: gray;
      border-radius: 50%;
-      cursor: pointer; 
-      height: 15px;    
-      margin-right: 10px;
-      width: 15px;
+     cursor: pointer; 
+     height: 0.9rem;    
+     margin-right: 0.625rem;
+     width: 0.9rem;
   }
   span:last-child{
-      margin-right: 0;
+     margin-right: 0;
   }
   
  /*play/pause btn*/ 
@@ -429,14 +505,14 @@ p{
     .controls{
         background: #404040;
         border: none;
-        border-radius: 6px;
+        border-radius: 0.4rem;
         color: #ffffff !important;
         display: inline-block;
         font-family:'Montserrat', sans-serif;
         font-size: 1rem;
-        letter-spacing: 6px;
+        letter-spacing: 0.4rem;
         margin-top: 0.9rem;
-        padding: 11px;
+        padding: 0.7rem;
         text-transform: uppercase;      
         transition: all 0.3s ease 0s;
         width: 10rem;
@@ -444,11 +520,11 @@ p{
     }
 
     .controls:hover{
-        color: #404040 !important;
-        font-weight: 700 !important;
-        letter-spacing: 10px;
         background: none;
         box-shadow: 0px 5px 40px -10px #413c69;
+        color: #404040 !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.625rem; 
         transition: all 0.3s ease 0s;
     }
     /*other projects*/
@@ -456,14 +532,15 @@ p{
     .other-projects{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin-top: 3rem;
+        margin-top: 5rem;
         position: relative;
         width: 100%;
     }
 
     .picture-projects{
-    width: 100%;
-    box-shadow: 2px 6px 11px 3px #413c69;
+     box-shadow: 2px 6px 11px 3px #413c69;   
+     width: 100%;
+    
     }
 
     .picture-projects:hover{
@@ -481,22 +558,22 @@ p{
 
     .text-project{
         font-size: 1.2rem;
-        text-decoration: none;
         line-height: 2;
-
+        text-decoration: none;
     }
 
     /*links*/
 h5{
     color: #413c69;
     font-family:'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight:bolder;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
     .links{
         display: flex;
         justify-content: center;
+        margin-bottom: 3rem;
     }
     .project-links{
         text-decoration: none;
@@ -530,8 +607,9 @@ h5{
     }
 
     footer{
-      height: 7.5rem;
         background-color: #faebeb;
+        height: 7.5rem;
+        
     }
 
     .copyright{

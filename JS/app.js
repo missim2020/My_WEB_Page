@@ -10,6 +10,24 @@ window.onscroll = () => {
   }
 }
 
+//quote
+
+function myFunction (quote){
+if (quote.matches) {
+  document.getElementById("quote1").style.display="inline-block";
+  document.getElementById("quote2").style.display="none";
+}else{
+  document.getElementById("quote1").style.display="none";
+  document.getElementById("quote2").style.display="inline-block";
+}
+}
+
+var quote = window.matchMedia("(min-width: 1500px)")
+myFunction(quote) // Call listener function at run time
+quote.addListener(myFunction) // Attach listener function on state changes
+
+
+
 //image carousel
 
 const prev = document.getElementById("btn-prev"),
