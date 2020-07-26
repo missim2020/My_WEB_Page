@@ -1,0 +1,45 @@
+body{
+    margin:0
+}
+
+h3{
+    background-color: white;
+    color: #ad62aa;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin:0.5rem 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+.photo4{
+width: 100%;
+
+}
+
+.stiky{
+    position:-webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.article{
+    width: 100%;
+    
+}
+    .text{
+        font-family:'Domine', serif;
+        font-size: 0.6rem;
+        font-style: italic;
+        line-height: 1.6;
+        padding-left: 1rem;
+        padding-right: 1rem;   
+        text-align: justify;
+      }
+
+      .dots{
+        border-color: #ad62aa;
+        border-style: dotted none none;
+        border-width: 0.2rem;
+        width: 5%;
+    }
