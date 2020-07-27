@@ -16,8 +16,6 @@ header{
 
 header.scroll{
     background-color: #faebeb;
-
-
 }
 
     .navbar{
@@ -26,7 +24,6 @@ header.scroll{
 ul{
     display: flex;
     list-style-type: none;
-    
 }
 
 .list {
@@ -47,8 +44,8 @@ ul{
     margin-bottom: 0;
     }
 
- 
-    @media only screen and (max-width: 414px) {
+ /*media query*/
+    @media only screen and (max-width: 420px) {
         header{
             justify-content: center;
             width: 100%;
@@ -71,15 +68,20 @@ ul{
          }
         }
 
-    @media only screen and (min-width: 415px) and (max-width: 770px) {
+    @media only screen and (min-width: 421px) and (max-width: 767px)and (orientation: landscape){
+        body{
+        background-color:red;
+        }
+        
         header{
-            width: 90%;
+            width: 100%;
         }
         ul{
             padding: 0;
+            margin: 0.5rem 0;
         }
         .list{
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-right:0.7rem ;
             padding: 0;
          }
@@ -89,6 +91,9 @@ ul{
         margin-top: 0.3rem;
     }
     }   
+
+    /*end of media query*/
+
 /*Welcom section*/
 
     .welcome-section{
@@ -155,16 +160,15 @@ h2{
     transform: rotate(30deg);        
     width: 6.25rem;
     }
-
-    @media only screen and (max-width: 414px) {
-               .mobile-photo{
+/*media query*/
+    @media only screen and (max-width: 420px) {
+        .mobile-photo{
             display: inline-block;
             height: 100vh;
             width: 100%;
         }
         .my_photo{
-           display: none;
-            
+           display: none;  
         }
     h1{
         font-size: 2.2rem;
@@ -172,48 +176,48 @@ h2{
     h2{
         font-size: 1rem;
     }
-    .but1 {
-        display: none;
- }
- .but2{
-    display: none;
- }
- .but3{
-    display: none;
- }
-            }
-
-    @media only screen and (min-width: 415px) and (max-width: 770px) {
-        h1{
-            font-size: 3rem;
-        }
-        h2{
-            font-size: 1.5rem;
-        }
-        .but1{
-            height: 4rem;
-            width: 4rem;
-        }
+    .but1{
+display: none;
+    }
     .but2{
-        height: 5rem;
-        top: 14%;
-        width: 5rem;
+        display: none;
     }
     .but3{
-        height: 5.1rem;
-        top: 17%;
-        width: 5.1rem;
-}
- }
+        display: none;
+    }
+            }
 
+ @media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
+     
+    h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 1rem;
+        }
+        .but1{
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    .but2{
+        height: 3.5rem;
+        top: 14%;
+        width: 3.5rem;
+    }
+    .but3{
+        height: 3.7rem;
+        top: 17%;
+        width: 3.7rem;
+}
+ };
+
+ /*end of media query*/
 
 /*section About Me*/
 
 .main_section{
     margin-bottom: 4rem;
-
 }
-
 
 .About-me{
 position: relative;
@@ -221,7 +225,6 @@ position: relative;
 .photo1{
 height: auto;  
 width: 100%;
-
 }
 
 .text-about-me{
@@ -251,7 +254,6 @@ display:none;
     top: 4.6875rem;
     text-align: center;
     width: 100%;
-    
 }
 
 .article::-webkit-scrollbar {
@@ -276,7 +278,6 @@ display:none;
         width: 5%;
     }
 
-
     .title-MyWhy{
         color: #ad62aa;
         font-family: 'Montserrat', sans-serif;
@@ -295,9 +296,7 @@ display:none;
     margin: auto;
     position: relative;
     width: 100%;
-    
 }
-
 
 .picture-balloon{
 height:auto;
@@ -307,9 +306,7 @@ width:100%;
 .picture{
     grid-column-start:1;
     grid-column-end:3;
-
 }
-
 
 .Why-text{
 background-color: white;
@@ -317,7 +314,6 @@ grid-column-start: 3;
 grid-column-end: -1;
 margin-top: 4.5rem;
 position: relative;
-
 }
 
 .article_My_Why{
@@ -361,7 +357,7 @@ position: relative;
         padding:0.9rem;
         position:relative;
         text-align:center; 
-        width:48rem;
+        width:90%;
     }
 
      cite{
@@ -419,12 +415,12 @@ position: relative;
           margin:0
         }
 
-  @media only screen and (max-width: 414px) {
+/*media query*/
+
+  @media only screen and (max-width: 420px) {
     .main_section{
         margin-bottom: 2rem;
-    
     }
-
 
     .text-about-me{
         display: none;
@@ -446,7 +442,7 @@ position: relative;
             
           }
         
-/*why section*/
+/* MQ why section*/
 .Why-text{
     margin:0;
 }
@@ -471,7 +467,7 @@ position: relative;
             width: 100%;
 }
 
-/*quote*/
+/* MQ quote*/
 #quote2{
     height:4rem; 
     margin: 2rem auto;
@@ -511,7 +507,102 @@ position: relative;
     bottom:-0.5rem;
     right:-0.5rem;
   }
-};
+}
+
+@media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
+
+    .main_section{
+        margin-bottom: 2rem;
+    }
+
+    .text-about-me{
+        display: none;
+          }
+        
+        .title-mobile{
+        display: inline-block;    
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);   
+
+          }
+          .title-Aboutme-mobile{
+            color: #ad62aa;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            width: 100%;
+            
+          }
+        
+/* MQ why section*/
+.Why-text{
+    margin:0;
+}
+.article_My_Why{
+    display: none;
+    }
+.title-why-mobile{
+   display: inline-block;  
+     position: absolute;
+        left:50%;
+        top:50%;    
+       transform: translate(-50%, -50%);   
+          width:100%;
+}       
+        
+.title-MyWhy-mobile  {
+
+        color: #ad62aa;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin:0;
+            width: 100%;
+}
+
+/* MQ quote*/
+#quote2{
+    height:5rem; 
+    margin: 2rem auto;
+    width:80%;
+}
+
+ cite{
+    font-size:1rem;
+    top:-1.5rem;
+  }
+  .quote{
+    font-size: 1.3rem;
+  }    
+
+  .corner{
+    height:0.8rem;
+     width:0.8rem;
+    
+  }
+  #left_top{
+    left:-0.5rem;
+    top:-0.5rem;        
+  }
+
+  #right_top{
+    right:-0.5rem;
+    top:-0.5rem;
+           
+  }
+
+  #left_bottom{
+    bottom:-0.5rem;
+    left:-0.5rem;
+   
+  }
+  #right_bottom{
+    bottom:-0.5rem;
+    right:-0.5rem;
+  }
+
+}
+/*end of media query*/
 
   /*My project section*/
   
@@ -536,24 +627,25 @@ position: relative;
   /*image carousel*/
 
   .picture-carousel{
-    height: 25rem;
-    width: 40rem;
+    height: auto;
+    width: 100%;
     }
   
   .flex-wrapper {
-      display: flex;
+      display: grid;
       justify-content: center;
-      margin-top: 2rem;
-      width: 100%;
+      margin: 2rem auto 0.5rem auto;
+      width: 80%;
     }
   
     .slider-wrapper {
-      position: relative;
+   position: relative;
+      height: 100%;
     }
     #btn-prev, #btn-next {
         background-color: gray;
        cursor: pointer;
-        height: 25rem;
+        height: 100%;
         left: 0;  
         opacity: 0.4;
         position: absolute;
@@ -602,14 +694,11 @@ position: relative;
      margin-right: 0;
   }
   
- /*play/pause btn*/ 
- 
     .controls{
         background: #404040;
         border: none;
         border-radius: 0.4rem;
         color: #ffffff !important;
-        display: inline-block;
         font-family:'Montserrat', sans-serif;
         font-size: 1rem;
         letter-spacing: 0.4rem;
@@ -723,25 +812,86 @@ h5{
         margin:0.5rem 0 0.5rem 0;
     }
 
-    @media only screen and (max-width: 414px) {
+
+    /*media query*/
+    @media only screen and (max-width: 420px) {
         
         h3{
-            
             font-size: 2rem;
-            
+          }
+                 
+            #btn-prev, #btn-next {             
+               position: absolute;
+                width: 1.5rem;
+            }
+      
+          .dots-wrapper {
+               margin-top: 0;
+          }
+       
+          span {
+             height: 0.5rem;    
+             margin-right: 0.5rem;
+             width: 0.5rem;
+          }
+                   
+         /* MQ play/pause btn*/ 
+         
+            .controls{
+                font-size: 0.5rem;
+                margin-top: 0.9rem;
+                padding: 0.5rem;
+                width: 5rem;
+            }
+            .controls:hover{
+               letter-spacing: 0.3rem; 
+            }
+
+        .other-projects{
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .picture-projects{
+            width: 100%;
+        }
+        .text-project{
+            font-size: 1rem;
+        }
+        h5{
+            margin: 1rem,0;
+        }
+        .more{
+            font-size: 0.9rem;
+            margin:1rem 0.2rem;
+        }
+    }
+/*cia baigiau. Reikia uzbaigti karusele*/
+    @media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
+        h3{
+           font-size: 2rem;
+          }
+
+          /*.flex-wrapper {
+            display: flex;
+            justify-content: center;
+            margin:2rem auto;
+            width: 50%;
           }
         .picture-carousel{
-            height: 13rem;
-            width: 18rem;
+            height: auto;
+            width: 100%;
             }
           
             #btn-prev, #btn-next {             
-                height: 13rem;
+                height: 100%;
                 position: absolute;
                 width: 2rem;
             }
       
           .dots-wrapper {
+              width: 80%;
                margin-top: 0.5rem;
           }
        
@@ -751,7 +901,7 @@ h5{
              width: 0.5rem;
           }
                    
-         /*play/pause btn*/ 
+         /* MQplay/pause btn*/ 
          
             .controls{
                 font-size: 0.5rem;
@@ -782,3 +932,6 @@ h5{
             margin:1rem 0.2rem;
         }
     }
+
+
+    
