@@ -2,19 +2,27 @@ body{
     margin:0
 }
 
+.back{
+    background-color: white;
+    padding:0.5rem 0 0 0.5rem;
+}
+a{
+    color: #413c69;
+     text-decoration: none;
+    }
+
 h3{
     background-color: white;
     color: #ad62aa;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    margin:0.5rem 0 0 0;
+    margin:0;
     text-align: center;
     width: 100%;
 }
 
 .photo4{
 width: 100%;
-
 }
 
 .stiky{

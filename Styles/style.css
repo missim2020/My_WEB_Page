@@ -69,10 +69,7 @@ ul{
         }
 
     @media only screen and (min-width: 421px) and (max-width: 767px)and (orientation: landscape){
-        body{
-        background-color:red;
-        }
-        
+                
         header{
             width: 100%;
         }
@@ -328,7 +325,7 @@ position: relative;
     width: 80%;    
 }
 
-.My_Why::-webkit-scrollbar {
+.article_My_Why::-webkit-scrollbar {
     background: transparent; /* make scrollbar transparent */
     width: 0px;
     }
@@ -432,6 +429,7 @@ position: relative;
         left:50%;
         top:50%;
         transform: translate(-50%, -50%);   
+        width: 100%;
 
           }
           .title-Aboutme-mobile{
@@ -619,7 +617,7 @@ position: relative;
     color: #ad62aa;
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5rem;
-    margin-top:0;
+    margin-top:1rem;
     margin-bottom: 0.5rem;
     width: 100%;
   }
@@ -635,7 +633,7 @@ position: relative;
       display: grid;
       justify-content: center;
       margin: 2rem auto 0.5rem auto;
-      width: 80%;
+      width: 50%;
     }
   
     .slider-wrapper {
@@ -748,7 +746,7 @@ position: relative;
      }
 
     .text-project{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 2;
         text-decoration: none;
     }
@@ -872,35 +870,7 @@ h5{
         h3{
            font-size: 2rem;
           }
-
-          /*.flex-wrapper {
-            display: flex;
-            justify-content: center;
-            margin:2rem auto;
-            width: 50%;
-          }
-        .picture-carousel{
-            height: auto;
-            width: 100%;
-            }
-          
-            #btn-prev, #btn-next {             
-                height: 100%;
-                position: absolute;
-                width: 2rem;
-            }
-      
-          .dots-wrapper {
-              width: 80%;
-               margin-top: 0.5rem;
-          }
-       
-          span {
-             height: 0.5rem;    
-             margin-right: 0.5rem;
-             width: 0.5rem;
-          }
-                   
+                      
          /* MQplay/pause btn*/ 
          
             .controls{
@@ -922,13 +892,13 @@ h5{
             width: 100%;
         }
         .text-project{
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
         h5{
             margin: 1rem,0;
         }
         .more{
-            font-size: 0.9rem;
+            font-size: 1.2rem;
             margin:1rem 0.2rem;
         }
     }
