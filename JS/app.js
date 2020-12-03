@@ -12,8 +12,8 @@ window.onscroll = () => {
 
 //quote
 
-function myFunction (quote){
-if (quote.matches) {
+function myFunction (q){
+if (q.matches) {
   document.getElementById("quote1").style.display="inline-block";
   document.getElementById("quote2").style.display="none";
 }else{
@@ -22,9 +22,11 @@ if (quote.matches) {
 }
 }
 
-var quote = window.matchMedia("(min-width: 1500px)")
-myFunction(quote) // Call listener function at run time
-quote.addListener(myFunction) // Attach listener function on state changes
+let quote = window.matchMedia("(min-width: 1500px)")
+myFunction(quote) 
+quote.addEventListener("change", myFunction)
+
+
 
 
 
