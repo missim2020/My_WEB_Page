@@ -94,7 +94,7 @@ ul{
 /*Welcom section*/
 
     .welcome-section{
-        padding-top: 3.125rem;
+        padding-top: 2.5rem;
         position: relative;
         text-align: center;
         z-index: -1; /* image will be hehind the text*/
@@ -159,6 +159,10 @@ h2{
     }
 /*media query*/
     @media only screen and (max-width: 420px) {
+        .welcome-section{
+            padding-top: 0;
+        }
+        
         .mobile-photo{
             display: inline-block;
             height: 100vh;
@@ -185,7 +189,9 @@ display: none;
             }
 
  @media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
-     
+    .welcome-section{
+        padding-top:1.6rem ;
+    }
     h1{
             font-size: 2.5rem;
         }
@@ -625,20 +631,23 @@ position: relative;
   /*image carousel*/
 
   .picture-carousel{
-    height: auto;
-    width: 100%;
-    }
+    /*height: auto;*/
+  width:600px ;
+  height: 400px;
+       }
   
   .flex-wrapper {
       display: grid;
       justify-content: center;
       margin: 2rem auto 0.5rem auto;
-      width: 50%;
+      width: 100%;
+     
     }
   
     .slider-wrapper {
    position: relative;
-      height: 100%;
+      height:100% ;
+    
     }
     #btn-prev, #btn-next {
         background-color: gray;
@@ -818,6 +827,14 @@ h5{
             font-size: 2rem;
           }
                  
+          .picture-carousel{
+            width: 20rem;  
+            height: 10rem;
+          }
+
+          .flex-wrapper{
+              width: 80%;
+          } 
             #btn-prev, #btn-next {             
                position: absolute;
                 width: 1.5rem;
