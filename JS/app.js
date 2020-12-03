@@ -105,24 +105,26 @@ function pauseSlideshow() {
   clearInterval(interval);
 }
 
-pause.onclick = function(){
+pause.onclick = function pausePlay (){
 	if(playing){ pauseSlideshow(); }
 	else{ playSlideshow(); }
 };
-
 
 next.addEventListener("click" , nextSlide);
 prev.addEventListener("click" , prevSlide);
 
 document.addEventListener("keydown", function(event){
 
-  switch (event.keyCode){
-    case 37:
-      prevSlide();
-      break;
-      case 39:
-        nextSlide();
-        break;
+  switch (event.key){
+    case "ArrowLeft":
+    prevSlide();
+    break;
+    case "ArrowRight":
+    nextSlide();
+    break;
+    case " ":
+    pausePlay();
+    break;
         
   }
 });
