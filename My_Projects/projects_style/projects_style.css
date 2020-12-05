@@ -1,0 +1,271 @@
+/*My project section*/
+
+h3 {
+    color: #ad62aa;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  h3 {
+    /*without second h3 user agent stylesheet owerwrite my css :( */
+    color: #ad62aa;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  
+  /*image carousel*/
+  
+  .picture-carousel {
+    /*height: auto;*/
+    width: 600px;
+    height: 400px;
+  }
+  
+  .flex-wrapper {
+    display: grid;
+    justify-content: center;
+    margin: 2rem auto 0.5rem auto;
+    width: 100%;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    height: 100%;
+  }
+  #btn-prev,
+  #btn-next {
+    background-color: gray;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.2s ease-in-out;
+    width: 3.125rem;
+  }
+  
+  #btn-prev:hover,
+  #btn-next:hover {
+    opacity: 0.6;
+  }
+  
+  #btn-next {
+    left: auto;
+    right: 0;
+  }
+  
+  .slide {
+    box-shadow: 2px 6px 11px 3px #413c69;
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .dots-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.9rem;
+  }
+  
+  .dot.active {
+    background-color: #000000;
+  }
+  
+  span {
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 0.9rem;
+    margin-right: 0.625rem;
+    width: 0.9rem;
+  }
+  span:last-child {
+    margin-right: 0;
+  }
+  
+  .controls {
+    background: #404040;
+    border: none;
+    border-radius: 0.4rem;
+    color: #ffffff !important;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+    margin-top: 0.9rem;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    width: 10rem;
+  }
+  
+  .controls:hover {
+    background: none;
+    box-shadow: 0px 5px 40px -10px #413c69;
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.625rem;
+    transition: all 0.3s ease 0s;
+  }
+  /*other projects*/
+  
+  .other-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5rem;
+    position: relative;
+    width: 100%;
+  }
+  
+  .picture-projects {
+    box-shadow: 2px 6px 11px 3px #413c69;
+    width: 100%;
+  }
+  
+  .picture-projects:hover {
+    opacity: 0.7;
+  }
+  
+  figcaption {
+    color: #413c69;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+  }
+  
+  .text-project {
+    font-size: 1.5rem;
+    line-height: 2;
+    text-decoration: none;
+  }
+  
+  /*links*/
+  h5 {
+    color: #413c69;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  .project-links {
+    text-decoration: none;
+  }
+  
+  figcaption:hover {
+    color: grey;
+  }
+
+  /*media query*/
+@media only screen and (max-width: 420px) {
+    h3 {
+      font-size: 2rem;
+    }
+  
+    .picture-carousel {
+      width: 20rem;
+      height: 10rem;
+    }
+  
+    .flex-wrapper {
+      width: 80%;
+    }
+    #btn-prev,
+    #btn-next {
+      position: absolute;
+      width: 1.5rem;
+    }
+  
+    .dots-wrapper {
+      margin-top: 0;
+    }
+  
+    span {
+      height: 0.5rem;
+      margin-right: 0.5rem;
+      width: 0.5rem;
+    }
+  
+    /* MQ play/pause btn*/
+  
+    .controls {
+      font-size: 0.5rem;
+      margin-top: 0.9rem;
+      padding: 0.5rem;
+      width: 5rem;
+    }
+    .controls:hover {
+      letter-spacing: 0.3rem;
+    }
+  
+    .other-projects {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .picture-projects {
+      width: 100%;
+    }
+    .text-project {
+      font-size: 1rem;
+    }
+    h5 {
+      margin: 1rem, 0;
+    }
+    .more {
+      font-size: 0.9rem;
+      margin: 1rem 0.2rem;
+    }
+  }
+  /*cia baigiau. Reikia uzbaigti karusele*/
+  @media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
+    h3 {
+      font-size: 2rem;
+    }
+  
+    /* MQplay/pause btn*/
+  
+    .controls {
+      font-size: 0.5rem;
+      margin-top: 0.9rem;
+      padding: 0.5rem;
+      width: 7rem;
+    }
+    .controls:hover {
+      letter-spacing: 0.3rem;
+    }
+  
+    .other-projects {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .picture-projects {
+      width: 100%;
+    }
+    .text-project {
+      font-size: 1.5rem;
+    }
+    h5 {
+      margin: 1rem, 0;
+    }
+    .more {
+      font-size: 1.2rem;
+      margin: 1rem 0.2rem;
+    }
+  }
+  

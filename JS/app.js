@@ -10,6 +10,25 @@ window.onscroll = () => {
   }
 }
 
+// navigation bar
+
+function navigate (me){
+  if (me.matches){
+    document.getElementById("about").href = "./about_me/about.html";
+    document.getElementById("why").href = "./My_Why/why.html";
+    document.getElementById("projects").href = "./My_Projects/projects.html";
+  }else{
+    document.getElementById("about").href = "#Main"
+    document.getElementById("why").href = "#Main";
+    document.getElementById("projects").href = "#projects";
+  }
+}
+
+let aboutMe = window.matchMedia("(max-width: 420px)")
+navigate(aboutMe)
+aboutMe.addEventListener("click", navigate)
+
+
 //quote
 
 function myFunction (q){
@@ -25,10 +44,6 @@ if (q.matches) {
 let quote = window.matchMedia("(min-width: 1500px)")
 myFunction(quote) 
 quote.addEventListener("change", myFunction)
-
-
-
-
 
 //image carousel
 
