@@ -430,51 +430,7 @@ blockquote {
 
 @media only screen and (max-width: 420px) {
   .main_section {
-    margin-bottom: 2rem;
-  }
-
-  .text-about-me {
-    display: none;
-  }
-
-  .title-mobile {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-  }
-  .title-Aboutme-mobile {
-    color: #ad62aa;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-    width: 100%;
-  }
-
-  /* MQ why section*/
-  .Why-text {
-    margin: 0;
-    width: 80%;
-  }
-  .article_My_Why {
-    display: none;
-  }
-  .title-why-mobile {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-  }
-
-  .title-MyWhy-mobile {
-    color: #ad62aa;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-    margin: 0;
-    width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   /* MQ quote*/
@@ -809,68 +765,7 @@ footer {
 }
 
 /*media query*/
-@media only screen and (max-width: 420px) {
-  h3 {
-    font-size: 2rem;
-  }
 
-  .picture-carousel {
-    width: 20rem;
-    height: 10rem;
-  }
-
-  .flex-wrapper {
-    width: 80%;
-  }
-  #btn-prev,
-  #btn-next {
-    position: absolute;
-    width: 1.5rem;
-  }
-
-  .dots-wrapper {
-    margin-top: 0;
-  }
-
-  span {
-    height: 0.5rem;
-    margin-right: 0.5rem;
-    width: 0.5rem;
-  }
-
-  /* MQ play/pause btn*/
-
-  .controls {
-    font-size: 0.5rem;
-    margin-top: 0.9rem;
-    padding: 0.5rem;
-    width: 5rem;
-  }
-  .controls:hover {
-    letter-spacing: 0.3rem;
-  }
-
-  .other-projects {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .picture-projects {
-    width: 100%;
-  }
-  .text-project {
-    font-size: 1rem;
-  }
-  h5 {
-    margin: 1rem, 0;
-  }
-  .more {
-    font-size: 0.9rem;
-    margin: 1rem 0.2rem;
-  }
-}
-/*cia baigiau. Reikia uzbaigti karusele*/
 @media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
   h3 {
     font-size: 2rem;

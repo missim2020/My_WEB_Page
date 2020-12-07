@@ -10,7 +10,7 @@ window.onscroll = () => {
   }
 }
 
-// navigation bar
+// navigation bar for mobile devices
 
 function navigate (me){
   if (me.matches){
@@ -28,6 +28,24 @@ let aboutMe = window.matchMedia("(max-width: 420px)")
 navigate(aboutMe)
 aboutMe.addEventListener("click", navigate)
 
+
+// visability of page parts on mobile devices
+
+function visible (v) {
+  if(v.matches){
+document.getElementById("aboutMe").style.display="none";
+document.getElementById("Why").style.display="none";
+document.getElementById("Projects").style.display="none";
+  }else {
+    document.getElementById("aboutMe").style.display="inline-block";
+    document.getElementById("Why").style.display="grid";
+    document.getElementById("Projects").style.display="inline-block";
+  }
+}
+
+let visability = window.matchMedia("(max-width: 420px)")
+visible(visability)
+visability.addEventListener("change", visible)
 
 //quote
 
@@ -109,12 +127,12 @@ item.addEventListener("click",()=>{
 })
 
 let playing=true;
-let interval = setInterval(nextSlide, 6000);
+let interval = setInterval(nextSlide, 5000);
 
 function playSlideshow() {
   pause.innerHTML = 'Pause';
   playing = true;
-  interval = setInterval(nextSlide,6000);
+  interval = setInterval(nextSlide,5000);
 }
 function pauseSlideshow() {
   pause.innerHTML = 'Play';
@@ -122,10 +140,16 @@ function pauseSlideshow() {
   clearInterval(interval);
 }
 
-pause.onclick = function pausePlay (){
-	if(playing){ pauseSlideshow(); }
-	else{ playSlideshow(); }
+let stopPlay = pause.onclick; 
+
+pause.onclick = ()=>{
+	if(playing){ 
+    pauseSlideshow(); 
+  } else {
+  playSlideshow();  
+}
 };
+
 
 next.addEventListener("click" , nextSlide);
 prev.addEventListener("click" , prevSlide);
@@ -139,8 +163,9 @@ document.addEventListener("keydown", function(event){
     case "ArrowRight":
     nextSlide();
     break;
-    case " ":
-    pausePlay();
+    case " ":   
+    stopPlay;     
+    //pausePlay();
     break;
         
   }
