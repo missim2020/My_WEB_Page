@@ -101,7 +101,6 @@ document.addEventListener("keydown", function(event){
     break;
     case " ":   
     stopPlay;     
-    //pausePlay();
     break;
         
   }

@@ -1,122 +1,114 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./projects_style/projects_style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./projects_style/projects_style.css">
     <!--<script src="https://kit.fontawesome.com/94d0b9783c.js" crossorigin="anonymous"></script>-->
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <link rel="icon" href="/Images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<link rel="icon" href="/Images/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Domine&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
     
-    <title>My projects</title>
+<title>My projects</title>
 </head>
+
 <body>
- 
-  <div class="mobBack"><a class="back" href="/index.html">Menu</a></div>
-  
-<!--My Projects-->
-<div class="title_my_projects"><h3 >My Projects</h3></div>
- 
+
+<header> 
+<nav><a class="back" href="/index.html">Menu</a></nav>
+<h3 >My Projects</h3>
+</header> 
+
 <main class="projects" id="projects">
-<!-- image carousel-->
-  
-  
-  <div class="flex-wrapper">
-    
-    <div class="slider-wrapper">
 
-      <div class="slide active"> <!-- shows witch slide is active. after refresh from which slide we start doing our slide show -->
-        <img class="picture-carousel" src="../Images/me.jpg" alt="picture of me">
-          </div>
-      <div class="slide">
-        <img class="picture-carousel" src="../Images/cake.jpg" alt="picture of cake">
-            </div>
-      <div class="slide">
-    <img class="picture-carousel" src="../Images/skate.jpg" alt="women skate">
-     </div>
-  <div class="slide">
-    <img class="picture-carousel" src="../Images/vilage.jpg" alt="picture of village">
-      </div>
-  <div class="slide">
-    <img class="picture-carousel" src="../Images/cow.jpg" alt="picture of the cow">
-    </div>
-  <div class="slide">
-    <img class="picture-carousel" src="../Images/army.jpg" alt="military">
-    </div>
-  <div class="slide">
-    <img class="picture-carousel" src="../Images/choir.jpg" alt="children choir">
-      </div>
-  <div class="slide">
-  <img class="picture-carousel" src="../Images/movie.jpg" alt="movie poster">
-     </div>
-  
-  <div id="btn-prev"></div>
-  <div id="btn-next"></div>
-      </div>
+  <!-- image carousel-->
+   
+<div class="slider-wrapper">
 
-    <div><button class="controls" id="pause">Pause</button></div>
- 
-  </div>
+<div class="slide active"> <!-- shows witch slide is active. after refresh from which slide we start doing our slide show -->
+<img class="picture-carousel" src="../Images/me.jpg" alt="picture of me">
+</div>
+<div class="slide">
+<img class="picture-carousel" src="../Images/cake.jpg" alt="picture of cake">
+</div>
+<div class="slide">
+<img class="picture-carousel" src="../Images/skate.jpg" alt="women skate">
+</div>
+<div class="slide">
+<img class="picture-carousel" src="../Images/vilage.jpg" alt="picture of village">
+</div>
+<div class="slide">
+<img class="picture-carousel" src="../Images/cow.jpg" alt="picture of the cow">
+</div>
+<div class="slide">
+<img class="picture-carousel" src="../Images/army.jpg" alt="military">
+</div>
+<div class="slide">
+<img class="picture-carousel" src="../Images/choir.jpg" alt="children choir">
+</div>
+<div class="slide">
+<img class="picture-carousel" src="../Images/movie.jpg" alt="movie poster">
+</div>
   
-  <div class="dots-wrapper">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
+<a id="btn-prev" class="arrow">&#10094</a>
+<a id="btn-next"class="arrow">&#10095</a>
+  
+<div class="dots-wrapper">
+<span class="dot active"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+<div><button class="controls" id="pause">Pause</button></div>
 
+</div>
 <!--other projects-->
- <nav class="other-projects">
+<nav class="other-projects">
 <figure>
 <a class="text-project" href= "https://github.com/missim2020/Women-In-Tech" target="blank"><img class="picture-projects" src="../Images/women_in_tech.png" alt="women in tech" ><figcaption >"CodeFirstGirls" project</figcaption></a>
 </figure>
 
 <figure>
-  <a  class="text-project" href= "https://github.com/missim2020/Dice-game" target="blank"><img class="picture-projects" src="../Images/dice_game.png" alt="dice game" > <figcaption>"Udemy course" project</figcaption></a>
+<a  class="text-project" href= "https://github.com/missim2020/Dice-game" target="blank"><img class="picture-projects" src="../Images/dice_game.png" alt="dice game" > <figcaption>"Udemy course" project</figcaption></a>
 </figure>
 
 <figure>
-    <a  class="text-project" href= "https://codepen.io/Missim2020/pen/vYOPOWM" target="blank"><img class="picture-projects" src="../Images/technical_documentation.jpg" alt="technical documentation" ><figcaption>Project for "FreeCodeCamp" certificate</figcaption></a>
-    </figure>
-  </nav>
+<a  class="text-project" href= "https://codepen.io/Missim2020/pen/vYOPOWM" target="blank"><img class="picture-projects" src="../Images/technical_documentation.jpg" alt="technical documentation" ><figcaption>Project for "FreeCodeCamp" certificate</figcaption></a>
+</figure>
+</nav>
   
-  <h5>More...</h5>
-  <nav class="links">
+<h5>More...</h5>
+<nav class="links">
    
-    <figure class="more">
-    <a class="project-links"href="https://github.com/missim2020" target="blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false" data-width="1.8rem" data-height="1.8rem"></span><figcaption>Github</figcaption></a>
-    </figure>
+<figure class="more">
+<a class="project-links"href="https://github.com/missim2020" target="blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false" data-width="1.8rem" data-height="1.8rem"></span><figcaption>Github</figcaption></a>
+</figure>
     
-    <figure class="more">
-    <a class="project-links" href="https://www.freecodecamp.org/fccbb0169f7-7a3d-4ad5-b509-226de61e68cf" target="blank"><span class="iconify" data-icon="simple-icons:freecodecamp" data-inline="false" data-width="1.8rem" data-height="1.8rem"></span><figcaption>FreeCodeCamp</figcaption></a>
-  </figure>
+<figure class="more">
+<a class="project-links" href="https://www.freecodecamp.org/fccbb0169f7-7a3d-4ad5-b509-226de61e68cf" target="blank"><span class="iconify" data-icon="simple-icons:freecodecamp" data-inline="false" data-width="1.8rem" data-height="1.8rem"></span><figcaption>FreeCodeCamp</figcaption></a>
+</figure>
 
-  <figure class="more">
-    <a class="project-links" href="https://www.codewars.com/users/missim2020" target="blank"><span class="iconify" data-icon="simple-icons:codewars" data-inline="false" data-width="1.8rem" data-height="1.8rem"></span><figcaption>Codewars</figcaption></a>
-  </figure>
+<figure class="more">
+<a class="project-links" href="https://www.codewars.com/users/missim2020" target="blank"><span class="iconify" data-icon="simple-icons:codewars" data-inline="false" data-width="1.8rem" data-height="1.8rem"></span><figcaption>Codewars</figcaption></a>
+</figure>
   
 </nav>
 </main>
 
-<section class="contact" id="contact">
-
-  <footer>
-    <h6>You can be friends with me:</h6>
-    <nav>
-    <a href="https://www.linkedin.com/in/simona-joksaite-aa128466/" target="blank"><span class="iconify" data-icon="ant-design:linkedin-outlined" data-inline="false" data-width="1.5rem" data-height="2rem"></span></a>
-    <a href="https://www.instagram.com/simona_joksaite/" target="blank"><span class="iconify" data-icon="fa-brands:instagram" data-inline="false" data-width="1.5rem" data-height="2rem"></span></a>
-    <a href="https://github.com/missim2020" target="blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false" data-width="1.5rem" data-height="2rem"></span></a>
-    </nav>
-    <p class="copyright">&copy; Simona 2020 London</p>
-  </footer>
-</section>  
-
-
-
+<!--Footer-->
+<footer>
+<h6>You can be friends with me:</h6>
+<nav>
+<a href="https://www.linkedin.com/in/simona-joksaite-aa128466/" target="blank"><span class="iconify" data-icon="ant-design:linkedin-outlined" data-inline="false" data-width="1.5rem" data-height="2rem"></span></a>
+<a href="https://www.instagram.com/simona_joksaite/" target="blank"><span class="iconify" data-icon="fa-brands:instagram" data-inline="false" data-width="1.5rem" data-height="2rem"></span></a>
+<a href="https://github.com/missim2020" target="blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false" data-width="1.5rem" data-height="2rem"></span></a>
+</nav>
+<p class="copyright">&copy; Simona 2020 London</p>
+</footer>
+ 
 <script src="./My_projects_JS/projects.js"></script>
 </body>
 </html>
