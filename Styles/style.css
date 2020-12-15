@@ -215,15 +215,10 @@ animation-name: twinkle;
   h2 {
     font-size: 1rem;
   }
-  .but1.but2.but3 {
+  .but1,.but2,.but3 {
     display: none;
   }
-  /*.but2 {
-    display: none;
-  }
-  .but3 {
-    display: none;
-  }*/
+  
 }
 
 @media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
@@ -684,7 +679,7 @@ h3 {
       font-size: 0.5rem;
       letter-spacing: 0.4rem;
       margin-top: 0.9rem;
-      padding: 0.5rem;
+      padding: 0.5rem 0.1rem 0.5rem 0.5rem;
       text-transform: uppercase;
       transition: all 0.3s ease 0s;
       width: 5rem;
