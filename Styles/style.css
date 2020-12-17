@@ -87,17 +87,17 @@ margin-right: 0;
 
 }
 
-@media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width: 421px) and (max-width: 770px) {
   header {
     width: 100%;
   }
   ul {
     padding: 0;
-    margin: 0.5rem 0;
+    margin: 0;
   }
   .list {
-    font-size: 1rem;
-    margin-right: 0.7rem;
+    font-size: 1.5rem;
+    margin-right: 1rem;
     padding: 0;
   }
   .HRnav {
@@ -221,15 +221,15 @@ animation-name: twinkle;
   
 }
 
-@media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width: 421px) and (max-width: 770px) {
   .welcome-section {
     padding-top: 1.6rem;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size:3.5rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .but1 {
     height: 2.5rem;
@@ -278,10 +278,6 @@ animation-name: twinkle;
   width: 100%;
 }
 
-.title-mobile {
-  display: none;
-}
-
 .article {
   height: 100%;
   overflow-x: auto;
@@ -321,9 +317,7 @@ animation-name: twinkle;
   margin-bottom: 0.5rem;
   width: 100%;
 }
-.title-why-mobile {
-  display: none;
-}
+
 .why {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -365,6 +359,17 @@ animation-name: twinkle;
 .article_My_Why::-webkit-scrollbar {
   background: transparent; /* make scrollbar transparent */
   width: 0px;
+}
+
+
+.textWhy {
+  font-family: "Domine", serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  text-align: center;
 }
 
 /*Quotes*/
@@ -491,57 +496,49 @@ blockquote {
   }
 }
 
-@media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width: 421px) and (max-width: 770px) /*and (orientation: landscape)*/ {
+  .title-Aboutme{
+    font-size: 2.5rem;
+  }
+  
+  .text{
+    margin:0;
+  }
+  
   .main_section {
     margin-bottom: 2rem;
   }
 
-  .text-about-me {
-    display: none;
+  .article{
+    top:3.5rem;
   }
 
-  .title-mobile {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .title-Aboutme-mobile {
-    color: #ad62aa;
-    font-family: "Montserrat", sans-serif;
+  .title-MyWhy{
     font-size: 2.5rem;
-    width: 100%;
   }
-
+  
   /* MQ why section*/
   .Why-text {
     margin: 0;
   }
-  .article_My_Why {
-    display: none;
+.text{
+  text-align: justify;
+}
+  .textWhy {
+    font-family: "Domine", serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: justify;
   }
-  .title-why-mobile {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-  }
-
-  .title-MyWhy-mobile {
-    color: #ad62aa;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.5rem;
-    margin: 0;
-    width: 100%;
-  }
+ 
 
   /* MQ quote*/
   #quote2 {
-    height: 5rem;
-    margin: 2rem auto;
+    height: 6.5rem;
+    margin: 3.5rem auto 2rem auto;
     width: 80%;
   }
 
@@ -550,12 +547,12 @@ blockquote {
     top: -1.5rem;
   }
   .quote {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 
   .corner {
-    height: 0.8rem;
-    width: 0.8rem;
+    height: 0.9rem;
+    width: 0.9rem;
   }
   #left_top {
     left: -0.5rem;
@@ -601,7 +598,6 @@ h3 {
 /*image carousel*/
 
 .picture-carousel {
-  /*height: auto;*/
   width: 100%;
   height: auto;
 }
@@ -719,7 +715,6 @@ h3 {
 
 .other-projects {
   display: grid;
-  /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
   grid-template-columns: repeat(3, 1fr);
   margin-top: 5rem;
   position: relative;
@@ -748,8 +743,6 @@ figcaption {
 }
 
 .text-project {
-  /*font-size: 1.5rem;
-  line-height: 2;*/
   text-decoration: none;
 }
 
@@ -812,9 +805,9 @@ footer {
 
 /*media query*/
 
-@media only screen and (min-width: 421px) and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width: 421px) and (max-width: 770px) /*and (orientation: landscape) */{
   h3 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   /* MQplay/pause btn*/
@@ -829,9 +822,16 @@ footer {
     letter-spacing: 0.3rem;
   }
 
+  #description{
+    font-size: 1.3rem;
+  }
+
   .other-projects {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    margin-top: 2rem;
+    width: 60%;
   }
 
   .picture-projects {
@@ -841,10 +841,13 @@ footer {
     font-size: 1.5rem;
   }
   h5 {
-    margin: 1rem, 0;
+    margin: 1rem 0;
   }
   .more {
     font-size: 1.2rem;
     margin: 1rem 0.2rem;
+}
+.links{
+  margin-bottom: 1rem;;
 }
 }
