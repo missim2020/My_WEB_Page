@@ -10,6 +10,36 @@ window.onscroll = () => {
   }
 }
 
+//Catching butterflies
+
+const butterfly1 = document.getElementById("but1")
+const butterfly2 = document.getElementById("but2")
+const butterfly3 = document.getElementById("but3")
+
+const disappear1=()=> {
+butterfly1.style.display="none"
+}
+
+const disappear2=()=> {
+ butterfly2.style.display="none"
+}
+
+const disappear3=()=> {
+butterfly3.style.display="none"
+}
+      
+butterfly1.addEventListener("click", disappear1);
+butterfly2.addEventListener("click", disappear2);
+butterfly3.addEventListener("click", disappear3);
+
+
+
+
+
+
+
+
+
 // navigation bar for mobile devices
 
 function navigate (me){
