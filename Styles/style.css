@@ -153,8 +153,19 @@ h2 {
   animation-iteration-count: infinite ;
 }
 
+.show {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+
 .but1 {
-  animation-duration: 2s;
+animation-duration: 2s;
 animation-name: twinkle;
 cursor: url("../Images/net.png"), pointer;
   height: 5rem;
@@ -163,7 +174,7 @@ cursor: url("../Images/net.png"), pointer;
   top: 36%;
   transform: rotate(-30deg);
   width: 5rem;
-  
+  z-index: 99999;
 }
 
 .but2 {
@@ -176,7 +187,7 @@ cursor: url("../Images/net.png"), pointer;
   top: 13%;
   transform: rotate(-30deg);
   width: 6rem;
-  
+  z-index: 99999;
 }
 
 .but3 {
@@ -189,7 +200,7 @@ cursor: url("../Images/net.png"), pointer;
   top: 15%;
   transform: rotate(30deg);
   width: 6.25rem;
-  
+  z-index: 99999;
 }
 
 @keyframes twinkle {

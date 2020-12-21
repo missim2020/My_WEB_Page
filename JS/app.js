@@ -16,28 +16,58 @@ const butterfly1 = document.getElementById("but1")
 const butterfly2 = document.getElementById("but2")
 const butterfly3 = document.getElementById("but3")
 
-const disappear1=()=> {
-butterfly1.style.display="none"
+function fadeIn(el){
+  el.classList.add('show');
+  el.classList.remove('hide');  
 }
 
-const disappear2=()=> {
- butterfly2.style.display="none"
+function fadeOut(el){
+  el.classList.add('hide');
+  el.classList.remove('show');
 }
 
-const disappear3=()=> {
-butterfly3.style.display="none"
-}
-      
-butterfly1.addEventListener("click", disappear1);
-butterfly2.addEventListener("click", disappear2);
-butterfly3.addEventListener("click", disappear3);
 
+butterfly1.addEventListener('click', function(){
+  let randomN1 = (Math.random() * 100);
+   let randomN2 = (Math.random() * 100);
+ 
+   if (butterfly1.className.indexOf('show') == -1) {
+   fadeIn(butterfly1);
+  butterfly1.style.left= randomN1 + "%";
+  butterfly1.style.top= randomN2 + "%";
+ }
+ else {
+   fadeOut(butterfly1);
+ }
+});
 
+butterfly2.addEventListener('click', function(){
+  let randomN1 = (Math.random() * 100);
+   let randomN2 = (Math.random() * 100);
+ 
+   if (butterfly2.className.indexOf('show') == -1) {
+   fadeIn(butterfly1);
+  butterfly2.style.left= randomN1 + "%";
+  butterfly2.style.top= randomN2 + "%";
+ }
+ else {
+   fadeOut(butterfly2);
+ }
+});
 
-
-
-
-
+butterfly3.addEventListener('click', function(){
+  let randomN1 = (Math.random() * 100);
+   let randomN2 = (Math.random() * 100);
+ 
+   if (butterfly3.className.indexOf('show') == -1) {
+   fadeIn(butterfly3);
+   butterfly3.style.left= randomN1 + "%";
+   butterfly3.style.top= randomN2 + "%";
+ }
+ else {
+   fadeOut(butterfly3);
+ }
+});
 
 
 // navigation bar for mobile devices
