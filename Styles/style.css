@@ -78,7 +78,10 @@ ul {
   }
 .mobile{
   display: inline;
-margin-right: 0;
+}
+
+#projects{
+  margin-right: 0;
 }
 
 .hidden{
