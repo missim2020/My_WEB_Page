@@ -61,14 +61,13 @@ ul {
     padding: 0;
   }
   .list {
-    font-size: 0.9rem;
-    margin-right: 0.7rem;
-    padding: 0;
-    color:white;
     background-color: white;
     box-shadow: #413c69 0px 3px 8px;
     color: #413c69;
-    padding: 5px;
+    font-size: 0.9rem;
+    margin-right: 0.7rem;
+    padding: 5px;   
+    
   }
 
    .HRnav {
@@ -87,7 +86,6 @@ ul {
 .hidden{
   display: none;
 }
-
 }
 
 @media only screen and (min-width: 421px) and (max-width: 770px) {
@@ -118,7 +116,6 @@ ul {
   padding-top: 2.5rem;
   position: relative;
   text-align: center;
-  /*z-index: -1; /* image will be hehind the text*/
 }
 
 .mobile-photo {
@@ -171,13 +168,13 @@ h2 {
 animation-duration: 2s;
 animation-name: twinkle;
 cursor: url("../Images/net.png"), pointer;
-  height: 5rem;
-  left: 22%;
-  position: absolute;
-  top: 36%;
-  transform: rotate(-30deg);
-  width: 5rem;
-  z-index: 99999;
+height: 5rem;
+left: 22%;
+position: absolute;
+top: 36%;
+transform: rotate(-30deg);
+width: 5rem;
+z-index: 99999;
 }
 
 .but2 {
@@ -207,7 +204,7 @@ cursor: url("../Images/net.png"), pointer;
 }
 
 @keyframes twinkle {
-  20% {
+  30% {
     transform: scale(0.5);
     opacity: 0.5;
   }
@@ -271,7 +268,7 @@ cursor: url("../Images/net.png"), pointer;
 /*section About Me*/
 
 .main_section {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .About-me {
@@ -360,19 +357,18 @@ cursor: url("../Images/net.png"), pointer;
   background-color: white;
   grid-column-start: 3;
   grid-column-end: -1;
-  /*margin-top: 4.5rem;*/
   position: relative;
 }
 
 .article_My_Why {
   height: 90%;
+  left: 50%;
   margin-top:1.5rem;
   overflow-x: auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 90%;
 }
 
@@ -380,7 +376,6 @@ cursor: url("../Images/net.png"), pointer;
   background: transparent; /* make scrollbar transparent */
   width: 0px;
 }
-
 
 .textWhy {
   font-family: "Domine", serif;
@@ -411,7 +406,7 @@ cursor: url("../Images/net.png"), pointer;
   background-color: #faebeb;
   border: 1px solid #413c69;
   height: 7.5rem;
-  margin: 100px auto;
+  margin: 5rem auto;
   padding: 0.9rem;
   position: relative;
   text-align: center;
@@ -421,10 +416,12 @@ cursor: url("../Images/net.png"), pointer;
 cite {
   background-color: white;
   color: #413c69;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   padding: 0 0.625rem;
   position: relative;
   top: -1.75rem;
+  font-family: 'Dancing Script', cursive;
 }
 .corner {
   background: white;
@@ -464,7 +461,8 @@ blockquote {
 }
 .quote {
   color: #413c69;
-  font-family: "Sacramento", cursive;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 0.1rem;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
@@ -489,8 +487,8 @@ blockquote {
     top: -1.5rem;
   }
   .quote {
-    font-size: 1rem;
-  }
+    font-size: 0.75rem;
+   }
 
   .corner {
     height: 0.8rem;
@@ -541,7 +539,7 @@ blockquote {
   .Why-text {
     margin: 0;
   }
-.text{
+  .text{
   text-align: justify;
 }
   .textWhy {
@@ -563,11 +561,11 @@ blockquote {
   }
 
   cite {
-    font-size: 1rem;
+    font-size: 1.5rem;
     top: -1.5rem;
   }
   .quote {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .corner {
@@ -634,7 +632,7 @@ h3 {
   left:86%;  
   padding: 0.5rem;    
   position: absolute; 
-  top: 40%; 
+  top: 50%; 
   transform: translate(0%, -50%); 
   }
   
@@ -644,7 +642,7 @@ h3 {
     padding: 0.5rem; 
     position: absolute; 
     right: 86%;
-    top: 40%; 
+    top: 50%; 
     transform: translate(0%, -50%); 
   }
   
@@ -658,10 +656,10 @@ h3 {
     span {
       background-color: gray;
       border-radius: 50%;
-       cursor: pointer; 
-       height: 1rem;    
-       margin-right: 0.5rem;
-       width: 1rem;
+      cursor: pointer; 
+      height: 1rem;    
+      margin-right: 0.5rem;
+      width: 1rem;
     }
     span:last-child {
       margin-right: 0;
@@ -716,14 +714,14 @@ h3 {
       line-height: 36px;
       opacity: 0.7;
       position: absolute; 
-     text-align: center; 
+      text-align: center; 
       top: 100%;
       transform: translate(0%, -100%); 
       width: 100%;      
     }
     
     #description {
-     color: white;
+      color: white;
       display: inline-block;
       font-family: "Montserrat", sans-serif;
       font-size: 1.5rem;
@@ -769,12 +767,13 @@ figcaption {
 /*links*/
 h5 {
   color: #413c69;
+  cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bolder;
   margin-bottom: 2rem;
-  cursor: pointer;
-}
+  }
+  
 .links {
   display: flex;
   justify-content: center;

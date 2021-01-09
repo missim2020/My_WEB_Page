@@ -46,7 +46,7 @@ butterfly2.addEventListener('click', function(){
    let randomN2 = (Math.random() * 100);
  
    if (butterfly2.className.indexOf('show') == -1) {
-   fadeIn(butterfly1);
+   fadeIn(butterfly2);
   butterfly2.style.left= randomN1 + "%";
   butterfly2.style.top= randomN2 + "%";
  }
@@ -242,7 +242,6 @@ document.addEventListener("keydown", function(event){
     break;
     case " ":   
     stopPlay;     
-    //pausePlay();
     break;
         
   }
