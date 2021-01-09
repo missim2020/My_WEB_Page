@@ -335,6 +335,7 @@ cursor: url("../Images/net.png"), pointer;
   margin-top: 0;
   margin-bottom: 0.5rem;
   width: 100%;
+
 }
 
 .why {
@@ -359,20 +360,20 @@ cursor: url("../Images/net.png"), pointer;
   background-color: white;
   grid-column-start: 3;
   grid-column-end: -1;
-  margin-top: 4.5rem;
+  /*margin-top: 4.5rem;*/
   position: relative;
 }
 
 .article_My_Why {
-  height: 100%;
-  margin: 0;
+  height: 90%;
+  margin-top:1.5rem;
   overflow-x: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 80%;
+  width: 90%;
 }
 
 .article_My_Why::-webkit-scrollbar {
@@ -388,7 +389,7 @@ cursor: url("../Images/net.png"), pointer;
   line-height: 1.6;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  text-align: center;
+  text-align: justify;
 }
 
 /*Quotes*/
